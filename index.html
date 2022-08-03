@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>başvuru formu</title>
+</head>
+<body>
+    <h1>tanıma formu</h1>
+    <form action="result.html">
+        <fieldset>
+            <legend>Kişisel Bilgiler</legend>
+            <div>
+            <label for="name">Adınız:</label>
+            <input type="password" id="name" name="name">
+            </div>
+            <div>
+                <label for="lastname">Soyadınız:</label>
+                <input type="text" id="lastname" name="lastname">
+            </div>
+            <div>
+                <label for="doğum">doğum tarihiniz:</label>
+                <input type="date" name="doğum" id="doğum" min="2000-01-01" max="2022-08-03">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Kullanıcı Bilgileri</legend>
+            <div>
+            <label for="email">Mail Adresiniz:</label>
+            <input type="email" id="email" name="email" placeholder="example@example.com">
+            </div>
+            <div>
+                <label for="password">Şifreniz:</label>
+                <input type="password" id="password" name="password">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>İlgi Alanları</legend>
+            <div>
+            <input type="checkbox" name="check1" id="hobi">
+            <label for="hobi">Kitap okumak</label>
+            </div>
+            <div>
+            <input type="checkbox" name="check2" id="hobi">
+            <label for="hobi">Sinema</label>
+            </div>
+            <div>
+            <input type="checkbox" name="check3" id="hobi">
+            <label for="hobi">Tiyatro</label>
+            </div>
+            <div>
+            <input type="checkbox" name="check4" id="hobi">
+            <label for="hobi">Diğer</label>
+            </div>
+            <div>
+                <label for="diğer"></label>
+                <textarea name="check5" id="diğer" cols="30" rows="10" placeholder="buraya yazabilirsiniz..."></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Eğitim Durumu</legend>
+            <div>
+                <input type="radio" id="ilkokul" name="eğitim">
+                <label for="ilkokul">İlkokul</label>
+            </div>
+            <div>
+            <input type="radio" id="lise" name="eğitim">
+            <label for="lise">Lise</label>
+            </div>
+            <div>
+                <input type="radio" id="lisans" name="eğitim">
+                <label for="lisans">Lisans</label>
+            </div>
+            <div>
+                <input type="radio" id="ylisans" name="eğitim">
+                <label for="ylisans">Yüksek Lisans</label>
+            </div>
+            <br>
+        </fieldset>
+
+        <div>
+        <fieldset>
+                <legend>Seçilen Path</legend>
+                <label for="path"></label>
+
+                <select name="path_seçimi" id="tatlı">
+                  <option value="" selected disabled>seçiminiz</option>
+                  <optgroup label="Full Stack">
+                    <option value="Front-end">Front-end</option>
+                    <option value="Back-end">Back-end</option>
+                  </optgroup>
+                  <option value="AWS-DevOps">AWS-DevOps</option>
+                  <option value="Data-Science">AWS-DevOps</option>
+                  <option value="Diğer">Diğer</option>
+                </select>
+        </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Günlük Ders Çalışma Saati</legend>
+                <label for="çalışma">0 ile 12 arasında</label>
+                <input type="range" id="çalışma" min="0" max="12" step="0.5">
+            </fieldset>
+        </div>
+
+
+
+        <br><br>
+        <input type="submit" value="Gönder">
+        <input type="reset" value="Resetle">
+
+    </form>
+</body>
+</html>
